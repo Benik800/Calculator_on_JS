@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Калькулятор</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/calculator-minimalistic-svgrepo-com.svg" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="calc">
+          <div class="calc__body">
+            <div class="theme">
+              <button class="theme__button">
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    id="theme__b"
+                    d="M12 3V4M12 20V21M4 12H3M6.31412 6.31412L5.5 5.5M17.6859 6.31412L18.5 5.5M6.31412 17.69L5.5 18.5001M17.6859 17.69L18.5 18.5001M21 12H20M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z"
+                    stroke="#000000"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="calc__up">
+              <input class="calc__display" type="text" readonly />
+            </div>
+            <div class="answer">
+              <input class="calc__answer" type="text" readonly />
+            </div>
+
+            <div class="calc__buttons">
+              <div class="firstcol">
+                <button class="operation">AC</button>
+                <button class="numbers">7</button>
+                <button class="numbers">4</button>
+                <button class="numbers">1</button>
+                <button class="numbers">00</button>
+              </div>
+
+              <div class="secondcol">
+                <button class="operation">%</button>
+                <button class="numbers">8</button>
+                <button class="numbers">5</button>
+                <button class="numbers">2</button>
+                <button class="numbers">0</button>
+              </div>
+
+              <div class="thirdcol">
+                <button class="del operation__other">
+                  <img src="images/delete-left-svgrepo-com.svg" alt="" />
+                </button>
+                <button class="numbers">9</button>
+                <button class="numbers">6</button>
+                <button class="numbers">3</button>
+                <button class="dot operation__other">.</button>
+              </div>
+
+              <div class="fourthcol">
+                <button class="operation">x</button>
+                <button class="operation">÷</button>
+                <button class="operation">+</button>
+                <button class="operation">–</button>
+                <button class="operation__other--enter">=</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
