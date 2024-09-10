@@ -31,6 +31,23 @@ buttons.map((button) => {
               display.value = "Error!";
             }
             break;
+
+          case "–":
+          case "+":
+          case "÷":
+          case "x":
+            const value = display.value;
+            console.log(value);
+
+            const lastKey = value[value.length - 1];
+            console.log(lastKey);
+
+            if (["–", "+", "÷", "x"].includes(lastKey)) {
+              display.value = value.slice(0, -1) + e.target.innerText;
+            } else {
+              display.value += e.target.innerText;
+            }
+            break;
           case "%":
             let passedText = display.value + "/100";
             display.value = eval(
